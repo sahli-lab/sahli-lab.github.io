@@ -1,4 +1,0 @@
-cd ~/Documents/Website/Personal
-rm -f .git/index.lock .git/HEAD.lock .git/objects/maintenance.lock
-find .git/objects -name 'tmp_obj_*' -delete
-git push -u origin main
