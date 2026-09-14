@@ -172,6 +172,15 @@ body {
 .content p { margin: 0 0 1rem; }
 .lede { font-size: 1.04rem; color: #333; }
 
+.portrait {
+  float: right;
+  width: 132px;
+  height: auto;
+  border-radius: 4px;
+  margin: 0.2rem 0 0.9rem 1.4rem;
+  shape-outside: inset(0 round 4px);
+}
+
 .content a { color: var(--link); text-decoration: none; border-bottom: 1px solid rgba(20,80,122,.32); }
 .content a:hover { border-bottom-color: var(--link); }
 
@@ -184,7 +193,7 @@ code { font-size: 0.9em; background: #efeeeb; padding: 0.1em 0.35em; border-radi
 .timeline { list-style: none; margin: 0; padding: 0; }
 .timeline li {
   display: flex; gap: 1.25rem;
-  padding: 0.6rem 0;
+  padding: 0.7rem 0;
   border-bottom: 1px solid var(--rule);
 }
 .timeline li:last-child { border-bottom: none; }
@@ -196,6 +205,11 @@ code { font-size: 0.9em; background: #efeeeb; padding: 0.1em 0.35em; border-radi
   padding-top: 0.1rem;
 }
 .timeline .entry { flex: 1; }
+.timeline .entry small { color: var(--ink-soft); line-height: 1.45; display: inline-block; margin-top: 0.2rem; }
+
+/* plain bulleted lists inside windows */
+.plain { margin: 0; padding-left: 1.2rem; }
+.plain li { margin-bottom: 0.5rem; }
 
 /* work list */
 .work-list { list-style: none; margin: 0; padding: 0; }

@@ -191,7 +191,7 @@ function loadPublications() {
 function renderPub(w) {
   const li = document.createElement('li');
 
-  // Authors — surname-first list, with your own name in bold.
+  // Authors — in publication order, with your own name in bold.
   const names = (w.authorships || []).map(function (a) {
     return (a.author && a.author.display_name) || '';
   }).filter(Boolean);
