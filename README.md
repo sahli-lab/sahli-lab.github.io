@@ -1,4 +1,4 @@
-# sahlisebastian.ch
+# sebastiansahli.com
 
 Personal site for Sebastian Sahli. Plain HTML, CSS and JavaScript — no build
 step, no dependencies. Served by GitHub Pages from
@@ -14,7 +14,7 @@ draggable windows.
 | `index.html` | Page structure — icons and the contents of each window. Edit your text here. |
 | `style.css` | All styling. The gradient colours are the first three lines of `:root`. |
 | `app.js` | Window behaviour, the clock, and the publications feed. `CONFIG` at the top is the only part you normally touch. |
-| `CNAME` | Tells GitHub Pages the custom domain is `sahlisebastian.ch`. Upload only once DNS is ready. |
+| `CNAME` | Tells GitHub Pages the custom domain is `sebastiansahli.com`. Upload only once DNS is ready. |
 
 ## Editing content
 
@@ -59,16 +59,31 @@ GitHub Pages rebuilds within about a minute.
 
 ## Custom domain
 
-Repo → **Settings → Pages** → Custom domain → `sahlisebastian.ch`, then tick
-**Enforce HTTPS** once the certificate is issued. At the registrar:
+Primary domain: **sebastiansahli.com**. `sebastiansahli.ch` is redirected to it
+at the registrar (GitHub Pages serves only one custom domain per repository).
+
+Set it in the repo under **Settings -> Pages -> Custom domain**, then tick
+**Enforce HTTPS** once the certificate is issued. Setting it there makes GitHub
+write the `CNAME` file itself, so don't upload one by hand.
+
+DNS at the registrar for `sebastiansahli.com`:
 
 ```
-A     @   185.199.108.153
-A     @   185.199.109.153
-A     @   185.199.110.153
-A     @   185.199.111.153
-CNAME www sahli-lab.github.io
+A     @     185.199.108.153
+A     @     185.199.109.153
+A     @     185.199.110.153
+A     @     185.199.111.153
+
+AAAA  @     2606:50c0:8000::153
+AAAA  @     2606:50c0:8001::153
+AAAA  @     2606:50c0:8002::153
+AAAA  @     2606:50c0:8003::153
+
+CNAME www   sahli-lab.github.io
 ```
+
+For `sebastiansahli.ch`, use the registrar's domain-forwarding / redirect
+feature to send it to `https://sebastiansahli.com` — do not point it at GitHub.
 
 ## Adding things later
 

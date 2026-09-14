@@ -1,4 +1,4 @@
-/* Sebastian Sahli — sahlisebastian.ch
+/* Sebastian Sahli — sebastiansahli.com
    Desktop icons, draggable windows, and a live publications feed. */
 
 /* =======================================================================
